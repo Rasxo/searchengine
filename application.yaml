@@ -1,0 +1,33 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    username: root
+    password: TestSkillbox
+    url: jdbc:mysql://localhost:3306/search_engine?useSSL=false&requireSSL=false&allowPublicKeyRetrieval=true
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: create
+    show-sql: false
+    open-in-view: false
+
+connection-settings:
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 YaBrowser/23.5.2.625 Yowser/2.5 Safari/537.36
+  referrer: http://www.google.com
+
+indexing-settings:
+  sites:
+    - url: http://www.playback.ru/
+      name: PlayBack
+#    - url: https://volochek.life/
+#      name: Волочек
+    - url: https://www.svetlovka.ru/
+      name: Светловка
+#    - url: https://dombulgakova.ru/
+#      name: Дом Булгакова
+
+
